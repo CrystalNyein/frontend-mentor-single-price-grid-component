@@ -70,7 +70,7 @@ body {
   background-color: var(--cyan);
 }
 .subscription button {
-  margin-top: 0.6rem;
+  margin-top: 0.7rem;
   width: 100%;
   border: 0;
   outline: none;
@@ -80,7 +80,7 @@ body {
   font-size: 1.05rem;
   font-weight: 700;
   border-radius: 0.3rem;
-  box-shadow: 1px 1px 50px hsl(179, 76%, 29%);
+  box-shadow: 1px 1px 50px hsl(179, 77%, 32%);
 }
 .why {
   grid-area: why;
