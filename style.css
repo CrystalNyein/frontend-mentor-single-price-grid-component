@@ -8,3 +8,96 @@
 html {
   font-size: 16px;
 }
+body {
+  background-color: var(--light-gray);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  font-family: var(--karla);
+}
+.main-container {
+  width: 42rem;
+  max-width: 85vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "community community"
+    "subscription why";
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 1px 1px 50px rgb(202, 202, 202);
+}
+.card {
+  padding: 2rem 3rem 2rem 3rem;
+}
+.card h1 {
+  font-size: 1.9rem;
+  color: var(--cyan);
+}
+.card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--light-gray);
+  font-weight: 700;
+}
+.card h3 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: var(--light-gray);
+}
+.card span {
+  font-size: 0.8rem;
+  color: var(--light-gray);
+  font-weight: 400;
+}
+.card p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: var(--light-gray);
+  line-height: 1.5rem;
+}
+.community {
+  grid-area: community;
+  background-color: white;
+}
+.community h2 {
+  color: var(--bright-yellow);
+}
+.community p {
+  color: var(--grayish-blue);
+}
+.subscription {
+  grid-area: subscription;
+  background-color: var(--cyan);
+}
+.subscription button {
+  margin-top: 0.6rem;
+  width: 100%;
+  border: 0;
+  outline: none;
+  background-color: var(--bright-yellow);
+  color: #eee;
+  padding: 0.9rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px 50px hsl(179, 76%, 29%);
+}
+.why {
+  grid-area: why;
+  background-color: hsl(179, 74%, 44%);
+}
+.why p {
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  color: hsl(179, 57%, 82%);
+}
+@media only screen and (max-width: 550px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "community"
+      "subscription"
+      "why";
+  }
+}
