@@ -19,6 +19,8 @@ body {
   width: 42rem;
   max-width: 85vw;
   margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
   display: grid;
   grid-template-areas:
     "community community"
@@ -81,6 +83,11 @@ body {
   font-weight: 700;
   border-radius: 0.3rem;
   box-shadow: 1px 1px 50px hsl(179, 77%, 32%);
+  transition: 0.3s;
+}
+.subscription button:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 5px hsl(179, 77%, 50%);
 }
 .why {
   grid-area: why;
